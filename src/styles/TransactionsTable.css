@@ -1,0 +1,127 @@
+.table-wrapper {
+  margin: 0 30px 30px;
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  border: 1px solid #e2e8f0;
+}
+
+.table-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.table-heading {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.table-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.search-input,
+.filter-select {
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  min-width: 220px;
+  font-size: 14px;
+}
+
+.filter-select {
+  cursor: pointer;
+  background: white;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 12px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+}
+
+.transaction-table thead {
+  background: #f1f5f9;
+}
+
+.transaction-table th {
+  padding: 14px;
+  text-align: left;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.transaction-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #0f172a;
+  font-size: 14px;
+}
+
+.transaction-table tbody tr:hover {
+  background: #f8fafc;
+  transition: 0.3s;
+}
+
+.type-badge {
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.income {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.expense {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .table-wrapper {
+    margin: 0 18px 20px;
+    padding: 16px;
+  }
+
+  .table-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .table-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .search-input,
+  .filter-select {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .transaction-table th,
+  .transaction-table td {
+    padding: 12px;
+    font-size: 13px;
+  }
+}
